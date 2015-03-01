@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.brian.android"
+    package="com.bran.android"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -8,13 +8,15 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="21" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".HacktorActivity"
+            android:name="com.bran.android.HacktorActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,11 +25,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TractorListActivity"
+            android:name="com.bran.android.TractorListActivity"
             android:label="@string/title_activity_tractor_list" >
         </activity>
         <activity
-            android:name=".TractorInfoActivity"
+            android:name="com.bran.android.TractorInfoActivity"
             android:label="@string/title_activity_tractor_info" >
         </activity>
     </application>
