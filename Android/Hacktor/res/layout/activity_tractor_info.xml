@@ -9,14 +9,26 @@
     tools:context="com.brian.android.TractorInfoActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tractorinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:text="Large Text"
+        android:textColor="@color/accent"
+        android:text=""
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/infolistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/accent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/tractorinfo">
+    </ListView>
 
 
 </RelativeLayout>

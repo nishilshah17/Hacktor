@@ -6,45 +6,59 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.brian.android.HacktorActivity" >
-
-    <EditText
-        android:id="@+id/passwordField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="144dp"
-        android:ems="10"
-        android:inputType="textPassword" />
+    android:background="@color/backG"
+    tools:context="com.brian.android.HacktorActivity"
+    >
 
     <EditText
         android:id="@+id/usernameField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="87dp"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/usernameField"
+        android:layout_alignStart="@+id/usernameField" />
+
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
+        android:textColor="@color/accent"
+        android:text="Login"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="160dp"
-        android:text="Login" />
+        android:layout_centerHorizontal="true" />
+
 
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Welcome to Hacktor!"
+        android:textColor="@color/accent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
-        android:text="Welcome to Hacktor!"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_marginTop="33dp"
+        android:src="@drawable/johndeere" />
+
 
 </RelativeLayout>
