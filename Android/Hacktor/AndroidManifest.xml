@@ -26,6 +26,10 @@
             android:name=".TractorListActivity"
             android:label="@string/title_activity_tractor_list" >
         </activity>
+        <activity
+            android:name=".TractorInfoActivity"
+            android:label="@string/title_activity_tractor_info" >
+        </activity>
     </application>
 
 </manifest>
